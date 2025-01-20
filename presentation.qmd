@@ -1,0 +1,61 @@
+---
+title: "Анализ успеваемости студентов"
+subtitle: "Исследование успеваемости студентов старших классов"
+author: Ekaterina
+format:
+  revealjs:
+    incremental: true
+---
+
+---
+
+```{python}
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('datasets/Student_performance_data _.csv', encoding = 'windows-1251')
+df1 = df[['StudentID','GradeClass', 'ParentalEducation','GPA', 'Absences']]
+df1.head(5)
+```
+
+---
+
+### Описание колонок
+**Student ID** - Уникальный идентификатор, присвоенный каждому студенту (от 1001 до 3392).
+**Age** - Возраст студентов колеблется от 15 до 18 лет.
+**Gender** - Пол студентов, где 0 представляет мужчину и 1 представляет женщину.
+**Ethnicity** - Этническая принадлежность студентов, закодированная следующим образом:
+
+::: {.incremental}
+
+*   0: Кавказский
+*   1: Афроамериканец
+*   2: Азиатский
+*   3: Другое
+:::
+
+---
+
+##### Распределение оценок (GradeClass)
+```{python}
+plt.figure(figsize=(8, 6))
+sns.histplot(df['GradeClass'], discrete=True)
+plt.title('Распределение оценок')
+plt.xlabel('Оценка')
+plt.ylabel('Количество студентов')
+plt.xticks(ticks=[0, 1, 2, 3, 4], labels=['A', 'B', 'C', 'D', 'F'])
+plt.show()
+```
+
+---
+
+```{python}
+plt.figure(figsize=(8, 6)) # Задаем размер графика
+sns.regplot(x='Absences', y='GPA', data=df, scatter_kws={'s': 100})
+plt.title('Соотношение пропусков и среднего балла (с линией регрессии)')
+plt.xlabel('Количество пропусков')
+plt.ylabel('Средний балл (GPA)')
+plt.show()
+```
+# Спасибо за внимание!
