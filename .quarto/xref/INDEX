@@ -1,0 +1,26 @@
+{
+  "GeoData.ipynb": {
+    "GeoData.html": "4d32b6a6",
+    "GeoData.tex": "9fc28810",
+    "GeoData.docx": "82525c27"
+  },
+  "hello.ipynb": {
+    "hello.tex": "90c71862",
+    "hello.html": "5a7a76bf"
+  },
+  "test.ipynb": {
+    "test.tex": "e5604ba2",
+    "test.html": "1f9626e9"
+  },
+  "report.ipynb": {
+    "report.tex": "72171661",
+    "report.html": "d5352dc1",
+    "report.docx": "998aa6bb"
+  },
+  "presentation.qmd": {
+    "presentation.html": "c9c75664"
+  },
+  "ter.ipynb": {
+    "ter.docx": "1dd35472"
+  }
+}

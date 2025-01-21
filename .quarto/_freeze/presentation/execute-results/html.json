@@ -1,0 +1,16 @@
+{
+  "hash": "0cc231584760adbb2f4d3d4308649cdf",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Анализ успеваемости студентов\"\nsubtitle: \"Исследование успеваемости студентов старших классов\"\nauthor: Ekaterina\nformat:\n  revealjs:\n    incremental: true\n---\n\n\n---\n\n::: {#c4f0e8c4 .cell execution_count=1}\n\n::: {.cell-output .cell-output-display execution_count=64}\n```{=html}\n<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>StudentID</th>\n      <th>GradeClass</th>\n      <th>ParentalEducation</th>\n      <th>GPA</th>\n      <th>Absences</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1001</td>\n      <td>2.0</td>\n      <td>2</td>\n      <td>2.929196</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1002</td>\n      <td>1.0</td>\n      <td>1</td>\n      <td>3.042915</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1003</td>\n      <td>4.0</td>\n      <td>3</td>\n      <td>0.112602</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1004</td>\n      <td>3.0</td>\n      <td>3</td>\n      <td>2.054218</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1005</td>\n      <td>4.0</td>\n      <td>2</td>\n      <td>1.288061</td>\n      <td>17</td>\n    </tr>\n  </tbody>\n</table>\n</div>\n```\n:::\n:::\n\n\n---\n\n### Описание колонок\n**Student ID** - Уникальный идентификатор, присвоенный каждому студенту (от 1001 до 3392).\n**Age** - Возраст студентов колеблется от 15 до 18 лет.\n**Gender** - Пол студентов, где 0 представляет мужчину и 1 представляет женщину.\n**Ethnicity** - Этническая принадлежность студентов, закодированная следующим образом:\n\n::: {.incremental}\n\n*   0: Кавказский\n*   1: Афроамериканец\n*   2: Азиатский\n*   3: Другое\n:::\n\n---\n\n##### Распределение оценок (GradeClass)\n\n::: {#78eafd35 .cell execution_count=2}\n\n::: {.cell-output .cell-output-display}\n![](presentation_files/figure-revealjs/cell-3-output-1.png){width=676 height=523}\n:::\n:::\n\n\n---\n\n::: {#3be05096 .cell execution_count=3}\n\n::: {.cell-output .cell-output-display}\n![](presentation_files/figure-revealjs/cell-4-output-1.png){width=664 height=524}\n:::\n:::\n\n\n# Спасибо за внимание!\n\n",
+    "supporting": [
+      "presentation_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}
